@@ -1,0 +1,294 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 80px; /* Ensure the content is not hidden behind the navbar */
+}
+
+/* Navbar styles */
+nav {
+    background-color: #333;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow flex items to wrap in smaller screens */
+}
+
+.nav-container .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.skills h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.projects h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects img {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+.contact ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+
+    ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .about, .skills, .projects, .contact {
+        padding: 40px 10px;
+    }
+
+    .about h2, .skills h2, .projects h2, .contact h2 {
+        font-size: 24px;
+    }
+
+    .about p, .skills li, .projects p, .contact p {
+        font-size: 16px;
+    }
+
+    .projects img {
+        width: 90%;
+    }
+
+    .nav-container .logo a {
+        font-size: 20px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+
+    ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .about, .skills, .projects, .contact {
+        padding: 40px 10px;
+    }
+
+    .about h2, .skills h2, .projects h2, .contact h2 {
+        font-size: 24px;
+    }
+
+    .about p, .skills li, .projects p, .contact p {
+        font-size: 16px;
+    }
+
+    .projects img {
+        width: 90%;
+    }
+
+    .nav-container .logo a {
+        font-size: 20px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
