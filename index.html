@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="#home">portfolio</a></div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#about">about</a></li> 
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#skills">skills</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- home section -->
+    <section id="home" class="hero">
+        <h1>welcome to my portfolio</h1>
+        <p>I am a junior full-stack developer passionate about creating amazing web applications.</p>
+    </section>
+    <section id="about" class="about">
+        <h2>about me</h2>
+        <p> I'm Chukwudi Praise, a junior full-stack developer with experience in building modern, user-friendly websites and applications.</p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>technical skills</h2>
+        <ul>
+            <li><b>Web Development:</b> Proficient in developing scalable, secure, and accessible web applications.</li>
+            <li><b>Frontend Technologies:</b> Expertise in React, Vue.js, HTML, CSS, and JavaScript (ES6+).</li>
+            <li><b>Backend Technologies:</b> Experience with Node.js, Express.js, and building RESTful APIs.</li>
+            <li><b>Database Management:</b> Proficient in using MongoDB, MySQL, and managing databases.</li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>my projects</h2>
+        <p>check out this awesome projects I have worked on</p>
+        <div class="project-item">
+            <img src="img1.jpg" alt="Business Desk">
+            <p>
+                <a class="project-link" href="http://businessdesk.ng">business desk</a> is a platform offering affordable and flexible business registration services, specifically for registering a company with the Corporate Affairs Commission (CAC) in Nigeria. It provides two payment plans: a one-time payment of ₦16,000 or a more affordable installment plan of ₦5,000 for four weeks. The service promises quicker registration times than competitors, with the potential to complete the registration within 7-14 days. BusinessDesk also offers an opportunity for agents to earn money by helping others with the registration process.
+            </p>
+        </div>
+        <div class="project-item">
+            <img src="img3.jpg" alt="Lola Finance">
+            <p>
+                <a class="project-link" href="http://lolafinance.com">lola finance</a> provides financial services designed for community-based management, such as family groups, religious organizations, cooperatives, and other collective bodies. It enables members to manage payments, savings, and transactions within a community.
+            </p>
+        </div>
+        <div class="project-item">
+            <img src="img2.jpg" alt="The SOAR">
+            <p>
+                <a class="project-link" href="http://soar.fatefoundation.org">the SOAR</a> program by Fate Foundation is designed to support early-stage businesses in Nigeria. It offers business training, mentorship, funding, and networking opportunities to young entrepreneurs, empowering them to scale their businesses. SOAR aims to foster entrepreneurship and build a network of empowered, successful business owners in the country.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out on social media.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/praise-chukwudi-598b61221/">LinkedIn</a></li>
+            <li><a href="https://x.com/cpraise142">Twitter</a></li>
+            <li><a href="https://discord.com/channels/@me/1309471438151090198">discord</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chukwudi Praise. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle the hamburger menu
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
