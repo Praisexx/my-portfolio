@@ -300,3 +300,66 @@ footer p {
     transform: scale(1.08);
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+
+@media (max-width: 430px) {
+    body {
+        padding-top: 60px;
+    }
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 5px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+    ul li {
+        margin: 8px 0;
+    }
+    .nav-container .logo a {
+        font-size: 16px;
+    }
+    ul li a {
+        font-size: 14px;
+    }
+    .hero {
+        padding: 40px 5px;
+    }
+    .hero h1 {
+        font-size: 22px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .about, .skills, .projects, .contact {
+        padding: 20px 5px;
+    }
+    .about h2, .skills h2, .projects h2, .contact h2 {
+        font-size: 18px;
+    }
+    .about p, .skills li, .projects p, .contact p {
+        font-size: 13px;
+    }
+    .projects img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .skills ul {
+        max-width: 100%;
+        padding-left: 10px;
+    }
+    .contact ul li a {
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    .project-link {
+        font-size: 13px;
+    }
+}
