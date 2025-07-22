@@ -63,7 +63,12 @@ ul li a {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 0;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
 }
 
 .hero h1 {
@@ -77,9 +82,14 @@ ul li a {
 
 /* About Section */
 .about {
-    padding: 60px 20px;
+    padding: 60px 0;
     text-align: center;
     background-color: #fff;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
 }
 
 .about h2 {
@@ -119,8 +129,13 @@ ul li a {
 
 /* Projects Section */
 .projects {
-    padding: 60px 20px;
+    padding: 60px 0;
     background-color: #fff;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
 }
 
 .projects h2 {
@@ -328,7 +343,12 @@ footer p {
         font-size: 14px;
     }
     .hero {
-        padding: 40px 5px;
+        padding: 40px 0;
+        max-width: none;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
     }
     .hero h1 {
         font-size: 22px;
@@ -336,8 +356,21 @@ footer p {
     .hero p {
         font-size: 14px;
     }
-    .about, .skills, .projects, .contact {
-        padding: 20px 5px;
+    .about {
+        padding: 20px 0;
+        max-width: none;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
+    }
+    .projects {
+        padding: 20px 0;
+        max-width: none;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: 100%;
     }
     .about h2, .skills h2, .projects h2, .contact h2 {
         font-size: 18px;
