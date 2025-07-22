@@ -292,3 +292,11 @@ footer p {
         font-size: 16px;
     }
 }
+
+.project-link {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-link:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
